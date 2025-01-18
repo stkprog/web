@@ -14,6 +14,10 @@
             type: String,
             default: "",
         },
+        projectImageAltText: {
+            type: String,
+            default: "",
+        },
         projectLink: {
             type: String,
             default: "",
@@ -38,7 +42,7 @@
                 <SvgCircle class="circle"/>
             </div>
 
-            <img :src="getImageURL()" class="w-full sm:w-11/12 lg:w-3/4 mx-auto mb-6  rounded-none sm:rounded-sm border-solid border-white border-4 border-x-0 sm:border-x-4" alt="">
+            <img :src="getImageURL()" :alt="projectImageAltText" class="w-full sm:w-11/12 lg:w-3/4 mx-auto mb-6  rounded-none sm:rounded-sm border-solid border-white border-4 border-x-0 sm:border-x-4" alt="">
 
             <div class="px-6 pb-4 text-lg lg:text-xl font-bigtext text-stkGray-500">
                 <p class="text-justify">{{ projectText }}</p>
