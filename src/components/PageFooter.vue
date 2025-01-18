@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <footer class="bg-footer bg-center text-stkBlue-600 bg-stkPurple-500  font-bigtext bottom-0 mt-16 p-5 pt-6 text-center">
+    <footer class="border-stkBlue-300 border-t-4 bg-footer bg-center text-stkBlue-600 bg-stkPurple-500  font-bigtext bottom-0 mt-16 p-5 pt-6 text-center">
         <p class="font-big text-stkGray-500">
             Powered by
             <a class="text-stkBlue-500 hover:text-white underline transition ease-linear duration-200" href="https://vuejs.org/" target="_blank">
