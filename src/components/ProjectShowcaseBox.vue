@@ -45,7 +45,10 @@
             <img :src="getImageURL()" :alt="projectImageAltText" class="w-full sm:w-11/12 lg:w-3/4 mx-auto mb-6  rounded-none sm:rounded-sm border-solid border-white border-4 border-x-0 sm:border-x-4" alt="">
 
             <div class="px-6 pb-4 text-lg lg:text-xl font-bigtext text-stkGray-500">
-                <p class="text-justify">{{ projectText }}</p>
+                <p class="text-justify">
+                    <!-- Output HTML, not plain text -->
+                    <span v-html="projectText"></span>
+                </p>
                 <p class="text-center mt-4">
                     Found <a class="underline font-bold text-stkBlue-500 hover:text-white transition ease-linear duration-200" :href="projectLink" target="_blank">here</a>
                 </p>
